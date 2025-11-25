@@ -1,21 +1,29 @@
-SaaS Project
+SaaS Task Management App
 
-This project contains two applications:
+A minimal SaaS-style task management application built using:
 
-server/ → Node.js + Express (API)
+Node.js + Express (Backend API)
 
-client/ → Next.js (Frontend)
+Next.js (Frontend)
 
-🚀 Running the Backend (server)
+Agile Scrum practices (User Stories, Scrum board, Issues)
+
+TDD & BDD using Jest and Cucumber.js
+
+This project implements the required features:
+Create, Read, Update, Delete tasks + Agile documentation + tests.
+
+ Installation & Setup
+Backend (server)
 cd server
 npm install
-npm start       # development mode
+npm start      # runs development server
 
 
 Backend runs at:
 http://localhost:5000
 
-🚀 Running the Frontend (client)
+Frontend (client)
 cd client
 npm install
 npm run dev
@@ -24,39 +32,61 @@ npm run dev
 Frontend runs at:
 http://localhost:3000
 
-✅ TODO
-Backend (server/)
+Testing
+Unit Tests (Jest)
+npm test
 
- Implement task CRUD (Create, Read, Update, Delete)
+BDD Tests (Cucumber.js)
+npm run cucumber
 
- Use in-memory storage for tasks
+User Stories (Agile Scrum Format)
+1. Create Task
 
- Create API routes for all task operations
+As a user
+I want to add a new task with a title, description, and due date
+So that I can organize what I need to do
 
- Add Jest unit tests for controllers and routes
+2. View All Tasks
 
- Add one Cucumber BDD feature + step definitions
+As a user
+I want to view all my tasks
+So that I can track what needs to be completed
 
- Make the backend ready for cloud deployment (Render / Railway / Heroku)
+3. Update Task Status
 
-Frontend (client/)
+As a user
+I want to mark a task as complete or incomplete
+So that I can keep track of my progress
 
- Create minimal UI for listing tasks
+4. Delete Task
 
- Add form to create new tasks
+As a user
+I want to delete a task
+So that I can remove tasks I no longer need
 
- Add checkbox/button to mark tasks as complete/incomplete
+5. BDD Acceptance Story
 
- Add delete button for tasks
+As a user
+I want to add a task and see it appear in the task list
+So that I can confirm it was successfully created
 
- Connect frontend to backend API (axios/fetch)
+Acceptance Criteria:
 
-Agile / Documentation
+Given I am using the system
 
- Add User Stories to GitHub Issues
+When I create a task
 
- Create Scrum board (To Do → In Progress → Done)
+Then I should see it appear in the tasks list
 
- Add milestone for Sprint
+Scrum Artifacts
 
- Document everything in this README
+This project includes:
+
+Issues on GitHub for each User Story
+
+Scrum board (To Do → In Progress → Done)
+
+Milestone for the Sprint
+
+Feature files for BDD and unit tests
+
